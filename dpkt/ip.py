@@ -242,7 +242,7 @@ IP_PROTO_MAX		= 255
 # XXX - auto-load IP dispatch table from IP_PROTO_* definitions
 def __load_protos():
     g = globals()
-    for k, v in g.iteritems():
+    for k, v in g.items():
         if k.startswith('IP_PROTO_'):
             name = k[9:].lower()
             try:
